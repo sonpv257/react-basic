@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9fa;
+  color: #212529;
+}
+
+.user-section {
+  padding: 50px 0;
+}
+
+.list-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.list-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.list-title {
+  font-size: 24px;
+  color: #333;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.user-table {
+  width: 100%;
+  min-width: 700px;
+  background-color: #fff;
+  border-collapse: collapse;
+}
+
+.table-header {
+  background-color: #1089ff;
+  color: #fff;
+}
+
+.user-table th, .user-table td {
+  padding: 12px 15px;
+  border-bottom: 2px solid #f8f9fd;
+  text-align: center;
+}
+
+.user-table tbody tr {
+  background-color: #f9f9fa;
+}
+
+.user-table tbody tr:nth-of-type(even) {
+  background-color: #eef0f5;
+}
+
+.user-table tbody tr:hover {
+  background-color: #dfe6f0;
+}
+
+.user-table tbody td{
+  cursor: pointer;
+
+}

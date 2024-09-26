@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.navbar {
+  max-width: 1140px;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  height:50px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 20px;
+  color:#282A35
+}
+
+.header {
+  position: relative;
+  background-color: #f1f1f1;
+  
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo{
+  padding-left:50px;
+
+}
+.nav-menu {
+  padding-left:50px;
+
+}
+
+@media (min-width: 660px) {
+  .nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 660px) {
+  .nav-wrapper {
+    display: flex;
+  }
+}
+
+@media (max-width: 659px) {
+  .nav-wrapper {
+    position: absolute;
+    top: 57px;
+    width:100%;
+    left: 270px;
+    z-index: 1;
+    background-color: #f1f1f1;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(100%);
+    border-radius:8px;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  }
+  .nav-wrapper.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-item a {
+  display: block;
+  padding: 1rem 0.5rem;
+  color:#282A35;
+
+}
+
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+
+}
+@media (max-width: 659px) {
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 8px;
+  }
+}
+.nav-item a:hover {
+  background-color:#ffffff;
+  color:#000000
+}
+/* Thêm vào Nav.css */
+.nav-item .active {
+  background-color:#ffffff;
+  font-weight: bold;
+  color: #007bff;
+}
+
